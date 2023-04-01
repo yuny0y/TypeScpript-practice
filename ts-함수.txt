@@ -1,0 +1,28 @@
+
+function post (userName? : string) {
+    if(userName){
+        console.log(`안녕하세요 ${userName}`);
+    } else {
+        console.log("이름이 없습니다");
+    }
+}
+
+function count (x : number | string) :number{
+    return x.toString().length
+}
+
+function check (money : number, house : boolean, charming : string) {
+    let score  : number = 0;
+    score + money;
+    if(house === true){
+        score+= 500
+    }
+    if (charming="상") {
+        score +=100
+    }
+    if (score>=600) {
+        return '결혼가능'
+    }
+}
+
+console.log(check(100,true,"상"))
